@@ -6,7 +6,7 @@ module.exports = {
     defaultPathMap,
     { dev, dir, outDir, distDir, buildId }
   ) {
-    const episodes = yaml.safeLoad(fs.readFileSync('episodes/list.yaml', 'utf8'));
+    const episodes = yaml.safeLoad(fs.readFileSync('episodes.yaml', 'utf8'));
     console.log(episodes);
     return {
       '/': { page: '/index', query: { episodes: episodes } },

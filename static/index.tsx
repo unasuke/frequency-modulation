@@ -3,7 +3,7 @@ import yaml from 'js-yaml'
 import fs from 'fs'
 
 function Home() {
-  const episodes = yaml.safeLoad(fs.readFileSync('../episodes/list.yml', 'utf8'));
+  const episodes = yaml.safeLoad(fs.readFileSync('../episodes.yml', 'utf8'));
    console.log(episodes);
   return <div>
     <Head>
