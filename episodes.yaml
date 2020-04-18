@@ -1,36 +1,51 @@
 -
   id: 7
+  date: 2019-09-15
+  title: Gyoza scrum
   guests:
-    - name: tatsuosakurai_ken_c_lo
-      twitter: tatsuosakurai_ken_c_lo
+    - name: tatsuosakurai
+      twitter: tatsuosakurai
+    - name: ken_c_lo
+      twitter: ken_c_lo
 -
   id: 6
+  date: 2019-07-23
+  title: Work is Life
   guests:
     - name: sinamon
       twitter: sinamon
 -
   id: 5
+  date: 2019-06-27
+  title: Ruby Tendency
   guests:
     - name: joker
       twitter: joker1007
 -
   id: 4
+  date: 2019-04-15
+  title: '#kaigieffect'
   guests:
     - name: udzura
       twitter: udzura
 -
   id: 3
+  date: 2019-03-06
+  title: Inside RubyKaigi
   guests:
     - name: amatsuda
       twitter: a_matsuda
 -
   id: 2
+  title: Educational Rubyist
+  date: 2019-02-14
   guests:
     - name: igaiga
       twitter: igaiga555
 -
   id: 1
-  title: 'aaaa'
+  date: 2019-01-28
+  title: Rubyist in Kyoto
   description: 'hogehogehogehoge'
   guests:
     - name: onk
