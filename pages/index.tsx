@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import EpisodeList from '../components/EpisodeList'
+import Episode from '../components/Episode'
 
 function Index(query: any) {
   const episodes = query.episodes
@@ -8,10 +9,11 @@ function Index(query: any) {
       <title>unasuke.fm</title>
       <meta property="og:title" content="unasuke.fm" />
     </Head>
+    <h1>unasuke.fm</h1>
     <p>
-      hahahahah
+      episodes
     </p>
-    <EpisodeList episodes={episodes} />
+   <EpisodeList episodes={episodes} />
   </div>
 }
 

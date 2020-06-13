@@ -6,10 +6,12 @@ module.exports = {
     defaultPathMap,
     { dev, dir, outDir, distDir, buildId }
   ) {
-    const episodes = yaml.safeLoad(fs.readFileSync('episodes.yaml', 'utf8'));
-    console.log(episodes);
+    const episodes = yaml.safeLoad(
+      fs.readFileSync('episodes.yaml', 'utf8'), { schema: yaml.FAILSAFE_SCHEMA }
+    );
+    console.log('################ Yaml loaded  ###########################');
     return {
-      '/': { page: '/index', query: { episodes: episodes } },
+      // '/': { page: '/index', query: { episodes: episodes } },
       // '/about': { page: '/about' },
       // '/readme.md': { page: '/readme' },
       // '/p/hello-nextjs': { page: '/post', query: { title: 'hello-nextjs' } },
