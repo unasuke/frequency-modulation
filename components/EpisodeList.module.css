@@ -1,0 +1,61 @@
+.wrapper {
+  max-width: 1000px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.episodes {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.episode {
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.entry {
+  padding: 10px;
+  border: 1px solid black;
+  box-shadow: 4px 4px 4px #eee;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.id {
+  font-style: italic;
+}
+
+.title {
+  font-size: 1.5rem;
+}
+
+.guests {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.guest {
+  margin-bottom: 10px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.name {
+  vertical-align: middle;
+}

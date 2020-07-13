@@ -1,23 +1,35 @@
-// import EpisodeListItem from 'EpisodeListItem'
+import styles from './EpisodeList.module.css'
+import Link from "next/link";
+import { EpisodeData } from "../interfaces";
 
-function EpisodeList(episodes: any) {
-  console.log(episodes)
-  const listItems = episodes.episodes.map((episode) => 
-    <li>
-      <article style={{marginBottom: '10px', padding: '10px', border: '1px solid black' }}>
-        <div>{episode.date}</div>
-        <div>#{episode.id}</div>
-        <h1>{episode.title}</h1>
-        <ul>{
+function EpisodeList(props) {
+  const episodes: Array<EpisodeData> = props.episodes
+
+  const listItems = episodes.map((episode) =>
+    <li key={episode.id} className={styles.episode}>
+      <article className={styles.entry}>
+        <section className={styles.header}>
+          <div>{episode.date}</div>
+          <div className={styles.id}>#{episode.id}</div>
+        </section>
+        <h1 className={styles.title}>{episode.title}</h1>
+        <ul className={styles.guests}>{
           episode.guests.map((guest, index) =>(
-          <li key={index}>{guest.name}</li>
+          <li key={index} className={styles.guest}>
+            <a href={`https://twitter.com/${guest.twitter}`} >
+              <img src={`https://unavatar.now.sh/twitter/${guest.twitter}`} className={styles.avatar}/>
+              <span className={styles.name}>@{guest.name}</span>
+            </a>
+          </li>
           ))
           }</ul>
-        <a href='#'>Read shownote</a>
+        <Link href="/ep/[id]" as={`/ep/${episode.id}`}><a>Read more</a></Link>
       </article>
     </li>
   )
-  return <ul style={{ listStyleType: 'none', padding: '0' }}>{listItems}</ul>
+  return <section className={styles.wrapper}>
+    <ul className={styles.episodes}>{listItems}</ul>
+  </section>
 }
 
 export default EpisodeList
