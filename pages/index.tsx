@@ -1,24 +1,28 @@
 import Head from 'next/head'
 import EpisodeList from '../components/EpisodeList'
-import Episode from '../components/Episode'
+import { EpisodeData } from "../interfaces";
+import Hero from "../components/Hero";
+import {getEpisodeData} from "../lib/api";
 
-function Index(query: any) {
-  const episodes = query.episodes
-  return <div>
+function Index({ episodes }) {
+  return <>
     <Head>
       <title>unasuke.fm</title>
       <meta property="og:title" content="unasuke.fm" />
     </Head>
-    <h1>unasuke.fm</h1>
-    <p>
-      episodes
-    </p>
-   <EpisodeList episodes={episodes} />
-  </div>
+    <Hero />
+    <EpisodeList episodes={episodes} />
+  </>
 }
 
-Index.getInitialProps = async({query}) => {
-  return { ...query }
+export async function getStaticProps(context) {
+  const episodes: Array<EpisodeData> = getEpisodeData()
+
+  return {
+    props: {
+      episodes
+    }
+  }
 }
 
 export default Index
