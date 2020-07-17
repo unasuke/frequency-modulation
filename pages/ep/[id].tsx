@@ -10,7 +10,11 @@ function Episode({ episode }) {
   const { id }  = router.query
 
   return <>
-    <Hero />
+    <Link href="/">
+      <a>
+        <Hero />
+      </a>
+    </Link>
     <div className={styles.wrapper}>
       <section className={styles.episode} >
         <article className={styles.entry}>
