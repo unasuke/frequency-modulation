@@ -1,0 +1,4 @@
+[[haaders]]
+for = "/*"
+[headers.values]
+Set-Cookie = "SameSite=None; Secure"
