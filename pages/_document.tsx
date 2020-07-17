@@ -10,7 +10,7 @@ class UnasukeFmDocument extends Document {
     return (
       <Html lang='ja'>
         <Head>
-          <meta httpEquiv={"Content-Security-Policy"} content={"media-src https://s3.wasabisys.com/"} />
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
         </Head>
         <body>
           <Main />
