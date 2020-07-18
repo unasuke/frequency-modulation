@@ -4,50 +4,45 @@
   title: Gyoza scrum
   url: https://s3.wasabisys.com/unasuke-fm/07-gyoza-scrum.mp3
   guests:
-    - name: tatsuosakurai
-      twitter: tatsuosakurai
-    - name: ken_c_lo
-      twitter: ken_c_lo
+    - twitter: tatsuosakurai
+    - twitter: ken_c_lo
+    - twitter: okuramasafumi
+    - twitter: coe401_
 -
   id: 6
   date: 2019-07-23
   title: Work is Life
   url: https://s3.wasabisys.com/unasuke-fm/06-work-is-life.mp3
   guests:
-    - name: sinamon
-      twitter: sinamon129
+    - twitter: sinamon129
 -
   id: 5
   date: 2019-06-27
   title: Ruby Tendency
   url: https://s3.wasabisys.com/unasuke-fm/05-ruby-tendency.mp3
   guests:
-    - name: joker
-      twitter: joker1007
+    - twitter: joker1007
 -
   id: 4
   date: 2019-04-15
   title: '#kaigieffect'
   url: https://s3.wasabisys.com/unasuke-fm/04-kaigieffect.mp3
   guests:
-    - name: udzura
-      twitter: udzura
+    - twitter: udzura
 -
   id: 3
   date: 2019-03-06
   title: Inside RubyKaigi
   url: https://s3.wasabisys.com/unasuke-fm/03-inside-rubykaigi.m4a
   guests:
-    - name: amatsuda
-      twitter: a_matsuda
+    - twitter: a_matsuda
 -
   id: 2
   date: 2019-02-14
   title: Educational Rubyist
   url: https://s3.wasabisys.com/unasuke-fm/02-educational-rubyist.mp3
   guests:
-    - name: igaiga
-      twitter: igaiga555
+    - twitter: igaiga555
 -
   id: 1
   date: 2019-01-28
@@ -55,5 +50,4 @@
   description: 'hogehogehogehoge'
   url: https://s3.wasabisys.com/unasuke-fm/01-rubyist-in-kyoto.mp3
   guests:
-    - name: onk
-      twitter: onk
+    - twitter: onk

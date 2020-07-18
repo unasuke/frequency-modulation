@@ -34,7 +34,7 @@ function Episode({ episode }) {
                       className={styles.avatar}
                       alt={guest.twitter}
                     />
-                    <span className={styles.name}>@{guest.name}</span>
+                    <span className={styles.name}>@{guest.twitter}</span>
                   </a>
                 </li>
               ))}
