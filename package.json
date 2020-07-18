@@ -8,6 +8,10 @@
     "lint:fix": "eslint --ext .js,.jsx,.ts,.tsx pages pages lib interfaces components --fix"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.30",
+    "@fortawesome/free-brands-svg-icons": "^5.14.0",
+    "@fortawesome/free-solid-svg-icons": "^5.14.0",
+    "@fortawesome/react-fontawesome": "^0.1.11",
     "next": "9.3.5",
     "react": "^16.9.0",
     "react-dom": "^16.9.0"

@@ -1,0 +1,21 @@
+.footer {
+  width: 100%;
+  background-color: #eeeeee;
+  text-align: center;
+  color: #777777;
+}
+
+.links {
+  display: flex;
+  max-width: 1000px;
+  margin: 0 auto 10px;
+  justify-content: space-evenly;
+}
+
+.icon {
+  margin-right: 3px;
+}
+
+.link {
+  color: #777777;
+}
