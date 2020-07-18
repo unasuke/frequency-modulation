@@ -7,7 +7,7 @@ function EpisodeList(props) {
 
   const listItems = episodes.map((episode) => (
     <li key={episode.id} className={styles.episode}>
-      <article className={styles.entry}>
+      <article className={styles.entry} id={`ep${episode.id}`}>
         <section className={styles.header}>
           <div>{episode.date}</div>
           <div className={styles.id}>#{episode.id}</div>
