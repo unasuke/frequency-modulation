@@ -1,5 +1,6 @@
-import '../styles/global.css'
+import "../styles/global.css";
+import { AppProps } from "next/app";
 
-export default function UnasukeFmApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+export default function UnasukeFmApp({ Component, pageProps }: AppProps) {
+  return <Component {...pageProps} />;
 }
