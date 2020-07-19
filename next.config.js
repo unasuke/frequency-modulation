@@ -6,4 +6,10 @@ module.exports = {
     return {
     }
   },
+  webpack: (config, { isServer }) => {
+    if (isServer) {
+      require("./scripts/generate-feed");
+    }
+    return config;
+  }
 }
