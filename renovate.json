@@ -1,0 +1,8 @@
+{
+  "schedule": ["every saturday"],
+  "timezone": "Asia/Tokyo",
+  "lockFileMaintenance": {
+    "enabled": true
+  },
+  "assignees": ["unasuke"]
+}
