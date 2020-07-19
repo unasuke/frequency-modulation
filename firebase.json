@@ -6,6 +6,17 @@
       "**/.*",
       "**/node_modules/**"
     ],
-    "cleanUrls": true
+    "cleanUrls": true,
+    "headers": [
+      {
+        "source": "**/*",
+        "headers": [
+          {
+            "key": "Content-Security-Policy-Report-Only",
+            "value": "default-src 'self'; media-src https://s3.wasabisys.com; img-src 'self' https://unavatar.now.sh https://www.googletagmanager.com; script-src: 'unsafe-inline' https://www.googletagmanager.com; connect-src: https://www.google-analytics.com; report-url https://83c22a6a6393c7f188e162c1e2ac144a.report-uri.com/r/d/csp/reportOnly"
+          }
+        ]
+      }
+    ]
   }
 }
