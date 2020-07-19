@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
+}
+
+.gutter {}
+
+@media screen and (max-width: 1030px) {
+ .gutter {
+   padding: 0 10px;
+ }
+}
+

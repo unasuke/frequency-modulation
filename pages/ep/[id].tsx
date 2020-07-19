@@ -17,45 +17,47 @@ function Episode({ episode }) {
       <Head>
         <title>{`ep${episode.id} "${episode.title}" - unasuke.fm`}</title>
       </Head>
-      <div style={{ display: "flex", flexFlow: "column", minHeight: "100vh" }}>
-        <Link href="/">
-          <a>
-            <Hero />
-          </a>
-        </Link>
-        <div className={styles.wrapper}>
-          <section className={styles.episode}>
-            <article className={styles.entry}>
-              <section className={styles.header}>
-                <div>{episode.date}</div>
-                <div className={styles.id}>#{episode.id}</div>
-              </section>
-              <h1 className={styles.title}>{episode.title}</h1>
-              <ul className={styles.guests}>
-                {episode.guests.map((guest, index) => (
-                  <li key={index} className={styles.guest}>
-                    <a href={`https://twitter.com/${guest.twitter}`}>
-                      <img
-                        src={`https://unavatar.now.sh/twitter/${guest.twitter}`}
-                        className={styles.avatar}
-                        alt={guest.twitter}
-                      />
-                      <span className={styles.name}>@{guest.twitter}</span>
-                    </a>
-                  </li>
-                ))}
-              </ul>
-              <audio
-                controls
-                preload={"metadata"}
-                src={episode.url}
-                className={styles.audio}
-              />
-            </article>
-          </section>
-          <Link href={"/"}>
-            <a>Back to top</a>
+      <div className={styles.container}>
+        <div className={styles.gutter}>
+          <Link href="/">
+            <a>
+              <Hero />
+            </a>
           </Link>
+          <div className={styles.wrapper}>
+            <section className={styles.episode}>
+              <article className={styles.entry}>
+                <section className={styles.header}>
+                  <div>{episode.date}</div>
+                  <div className={styles.id}>#{episode.id}</div>
+                </section>
+                <h1 className={styles.title}>{episode.title}</h1>
+                <ul className={styles.guests}>
+                  {episode.guests.map((guest, index) => (
+                    <li key={index} className={styles.guest}>
+                      <a href={`https://twitter.com/${guest.twitter}`}>
+                        <img
+                          src={`https://unavatar.now.sh/twitter/${guest.twitter}`}
+                          className={styles.avatar}
+                          alt={guest.twitter}
+                        />
+                        <span className={styles.name}>@{guest.twitter}</span>
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+                <audio
+                  controls
+                  preload={"metadata"}
+                  src={episode.url}
+                  className={styles.audio}
+                />
+              </article>
+            </section>
+            <Link href={"/"}>
+              <a>Back to top</a>
+            </Link>
+          </div>
         </div>
         <Footer />
       </div>

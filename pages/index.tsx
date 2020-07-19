@@ -5,6 +5,7 @@ import Hero from "../components/Hero";
 import { getEpisodeData } from "../lib/api";
 import { GetStaticProps } from "next";
 import Footer from "../components/Footer";
+import styles from "./index.module.css";
 
 function Index({ episodes }) {
   return (
@@ -13,9 +14,11 @@ function Index({ episodes }) {
         <title>unasuke.fm</title>
         <meta property="og:title" content="unasuke.fm" />
       </Head>
-      <div style={{ display: "flex", flexFlow: "column", minHeight: "100vh" }}>
-        <Hero />
-        <EpisodeList episodes={episodes} />
+      <div className={styles.container}>
+        <div className={styles.gutter}>
+          <Hero />
+          <EpisodeList episodes={episodes} />
+        </div>
         <Footer />
       </div>
     </>
