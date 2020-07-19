@@ -9,7 +9,7 @@ export default function Footer() {
     <footer className={styles.footer}>
       <p>This site using cookies for analytics.</p>
       <div className={styles.links}>
-        <a className={styles.link} href={"https://github.com/unasuke"}>
+        <a className={styles.link} href={"https://github.com/unasuke/fm"}>
           <FontAwesomeIcon fixedWidth icon={faGithub} className={styles.icon} />
           Source
         </a>
@@ -21,7 +21,7 @@ export default function Footer() {
             </a>
           </del>
         </Link>
-        <a className={styles.link} href={"https://github.com/unasuke"}>
+        <a className={styles.link} href={"https://github.com/unasuke/fm/blob/master/CHANGELOG.md"}>
           <FontAwesomeIcon fixedWidth icon={faList} className={styles.icon} />
           Changelog
         </a>
