@@ -6,6 +6,7 @@ import { getEpisodeData } from "../../lib/api";
 import Link from "next/link";
 import { GetStaticPaths, GetStaticProps } from "next";
 import Footer from "../../components/Footer";
+import Head from "next/head";
 
 function Episode({ episode }) {
   const router = useRouter();
@@ -13,6 +14,9 @@ function Episode({ episode }) {
 
   return (
     <>
+      <Head>
+        <title>{`ep${episode.id} "${episode.title}" - unasuke.fm`}</title>
+      </Head>
       <div style={{ display: "flex", flexFlow: "column", minHeight: "100vh" }}>
         <Link href="/">
           <a>
