@@ -9,7 +9,7 @@ function EpisodeList(props) {
     <li key={episode.id} className={styles.episode}>
       <article className={styles.entry} id={`ep${episode.id}`}>
         <section className={styles.header}>
-          <div>{episode.date}</div>
+          <div>{getFormattedDate(new Date(episode.date))}</div>
           <div className={styles.id}>#{episode.id}</div>
         </section>
         <h1 className={styles.title}>{episode.title}</h1>
@@ -38,6 +38,14 @@ function EpisodeList(props) {
       <ul className={styles.episodes}>{listItems}</ul>
     </section>
   );
+}
+
+function getFormattedDate(date: Date) {
+  return new Intl.DateTimeFormat("ja-JP", {
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+  }).format(date);
 }
 
 export default EpisodeList;

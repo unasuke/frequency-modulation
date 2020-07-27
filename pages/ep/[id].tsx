@@ -28,7 +28,7 @@ function Episode({ episode }) {
             <section className={styles.episode}>
               <article className={styles.entry}>
                 <section className={styles.header}>
-                  <div>{episode.date}</div>
+                  <div>{getFormattedDate(new Date(episode.date))}</div>
                   <div className={styles.id}>#{episode.id}</div>
                 </section>
                 <h1 className={styles.title}>{episode.title}</h1>
@@ -63,6 +63,14 @@ function Episode({ episode }) {
       </div>
     </>
   );
+}
+
+function getFormattedDate(date: Date) {
+  return new Intl.DateTimeFormat("ja-JP", {
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+  }).format(date);
 }
 
 export const getStaticProps: GetStaticProps = async (context) => {
