@@ -46,6 +46,7 @@ function Episode({ episode }) {
                     </li>
                   ))}
                 </ul>
+                <p>{episode.description}</p>
                 <audio
                   controls
                   preload={"metadata"}
