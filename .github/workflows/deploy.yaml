@@ -6,6 +6,7 @@ on:
 env:
   GOOGLE_ANALYTICS_ID: ${{ secrets.GOOGLE_ANALYTICS_ID }}
   FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+  DEPLOY_URL: https://unasuke.fm
 
 jobs:
   export:
