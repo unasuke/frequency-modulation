@@ -9,6 +9,7 @@ export interface EpisodeData {
 interface Guest {
   name: string;
   twitter: string;
+  github: string;
 }
 
 // interface Episodes: Array<Episode>
